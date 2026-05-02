@@ -3,6 +3,7 @@ import { useState } from "react";
 import { createContext } from "react";
 import { toast } from "react-toastify";
 
+
 export const BookContext = createContext('');
 
 const BookProvider = ({children}) => {
@@ -10,10 +11,20 @@ const BookProvider = ({children}) => {
   const [storedBooks, setStoredBooks] =useState([]);
   const [wishList, setWishList] = useState([]);
 
+  // useEffect(() => {
+  //   const getReadList = getAllReadListFromLocalDB();
+  //   setReadList(getReadList)
+  // },[])
+
+
+
+
   const handleMarkasRead = (currentBook) => {  //we're getting the book object here
+
 
     //find() is used to check through all items and return the first one that matches a condition
     const isExistBook = storedBooks.find((book) => book.bookId == currentBook.bookId);
+
     if(isExistBook){
       toast.error('this book is already marked as read');
     }else{
