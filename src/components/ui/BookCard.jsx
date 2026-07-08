@@ -13,7 +13,7 @@ const BookCard = ({book}) => {
 
         <div className="card-body">
 
-          <div>
+          <div className="flex gap-3">
             {book.tags.map((tag, ind) => <div key={ind} className="badge badge-soft badge-success font-semibold">{tag}</div>)}           
           </div>
 

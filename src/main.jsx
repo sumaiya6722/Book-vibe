@@ -13,7 +13,6 @@ import { ToastContainer } from 'react-toastify';
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    {/* <App /> */}
     <BookProvider>  {/* we wraped our entire application inside BookProvider */}
       <RouterProvider router={router} />
       <ToastContainer />

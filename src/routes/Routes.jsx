@@ -16,7 +16,7 @@ export const router = createBrowserRouter([
     children: [
       {
         index:true,
-        element:<Homepage></Homepage>,    //banner, Allbooks er moddhe ase
+        element:<Homepage></Homepage>,    //banner, Allbooks etar moddhe ase
       },
       {
         path:'/books',

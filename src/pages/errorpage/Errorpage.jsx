@@ -1,6 +1,8 @@
 // import React from "react";
 import { Link } from "react-router";
-// import { Link } from "react-router-dom";
+
+
+
 
 const Errorpage = () => {
   return (
@@ -17,7 +19,7 @@ const Errorpage = () => {
 
         {/* Description */}
         <p className="mt-2 text-gray-500">
-          The page you are looking for doesn’t exist or has been moved.
+          The page you are looking for doesn`t exist or has been moved.
         </p>
 
         {/* Button */}
